@@ -54,3 +54,4 @@ jspm_packages
 # Testing files
 *.bot
 lightkeeper.bot
+ngrok.exe
