@@ -1,16 +1,16 @@
-import { Topic } from "botbuilder-topical";
-import  asfetch from "node-fetch";
+// import { Topic } from "botbuilder-topical";
+// import  asfetch from "node-fetch";
 
 /* export class Insights extends Topic {
     async onStart(concernSet: any) {
-        let cs = [concernSet];
-        let baseURL = 'http://localhost:1337/insights';
+        var cs = [concernSet];
+        var baseURL = 'http://localhost:1337/insights';
         fetch (baseURL, {
             method: 'GET',
             body: JSON.stringify(body),
             headers: {'Content-Type' : 'application/JSON'},
         }).then( value : Response) => {
-            let resArr = [res];
+            var resArr = [res];
             // for (concern of cs){
             //     for(re of resArr){
             //         if(re === concern){

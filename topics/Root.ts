@@ -1,8 +1,8 @@
 // import { Topic } from "botbuilder-topical";
 // import { RecordConcern } from ".";
 
-let Topic = require('botbuilder-topical').Topic;
-let RecordConcern = require('.').RecordConcern;
+var Topic = require('botbuilder-topical').Topic;
+var RecordConcern = require('.').RecordConcern;
 
 export class Root extends Topic {
 
@@ -84,7 +84,7 @@ export class Root extends Topic {
 
 
     /* async onChildEnd() {
-        await this.send(`Please add another concern, or let me know if you are finished.`);
+        await this.send(`Please add another concern, or var me know if you are finished.`);
     } */
 
 }
