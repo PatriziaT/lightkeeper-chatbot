@@ -1,5 +1,5 @@
 // import { MemoryStorage, BotFrameworkAdapter } from "botbuilder";
-// import { Topic, doTopic } from "botbuilder-topical";
+import { doTopic } from "botbuilder-topical";
 //// import { ConsoleAdapter, MemoryStorage } from "botbuilder";
 //// import { Topic, doTopic, consoleOnTurn, prettyConsole } from "botbuilder-topical";
 // import { Root } from "./topics";
@@ -10,7 +10,6 @@ var MemoryStorage = require('botbuilder').MemoryStorage;
 var BotFrameworkAdapter = require('botbuilder').BotFrameworkAdapter;
 
 var Topic = require('botbuilder-topical').Topic;
-var doTopic = require('botbuilder-topical').doTopic;
 
 Topic.init(new MemoryStorage());
 

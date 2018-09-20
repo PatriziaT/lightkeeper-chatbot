@@ -1,11 +1,7 @@
-// import { Topic } from "botbuilder-topical";
-// import { RecordConcern } from ".";
-// import { Root } from ".";
-////import { Insights } from ".";
-
-var Topic = require('botbuilder-topical').Topic;
-var RecordConcern = require('.').RecordConcern;
-var Root = require('.').Root;
+import { Topic } from "botbuilder-topical";
+import { RecordConcern } from ".";
+import { Root } from ".";
+//import { Insights } from ".";
 
 export class Help extends Topic {
 
