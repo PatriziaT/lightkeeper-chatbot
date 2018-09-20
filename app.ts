@@ -15,7 +15,7 @@ import * as restify from 'restify';
 
 let server = restify.createServer();
 
-server.listen(process.env.port || process.env.PORT || 3978, function () {
+server.listen(process.env.port || process.env.PORT || 3980, function () {
     console.log(`${server.name} listening to ${server.url}`);
 });
 
