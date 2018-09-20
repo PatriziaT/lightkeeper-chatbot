@@ -1,7 +1,5 @@
-// import { Topic } from "botbuilder-topical";
+import { Topic } from "botbuilder-topical";
 // import fetch from "node-fetch";
-
-var Topic = require('botbuilder-topical').Topic;
 
 export class PostConcern extends Topic {
     async onStart(result:string[]){

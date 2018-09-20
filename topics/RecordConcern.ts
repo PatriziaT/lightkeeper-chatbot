@@ -1,11 +1,5 @@
-// import { Topic, ListStyle } from "botbuilder-topical";
-// import {PostConcern} from ".";
-
-var Topic = require('botbuilder-topical').Topic;
-var ListStyle = require('botbuilder-topical').ListStyle;
-var PostConcern = require('.').PostConcern;
-
-
+import { Topic, ListStyle } from "botbuilder-topical";
+import {PostConcern} from ".";
 
 class Child extends Topic<any, ConcernSet> {
 
