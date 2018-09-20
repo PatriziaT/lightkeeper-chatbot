@@ -1,7 +1,11 @@
-import { Topic } from "botbuilder-topical";
-import { RecordConcern } from ".";
-import { Root } from ".";
-//import { Insights } from ".";
+// import { Topic } from "botbuilder-topical";
+// import { RecordConcern } from ".";
+// import { Root } from ".";
+////import { Insights } from ".";
+
+let Topic = require('botbuilder-topical').Topic;
+let RecordConcern = require('.').RecordConcern;
+let Root = require('.').Root;
 
 export class Help extends Topic {
 
@@ -20,7 +24,7 @@ export class Help extends Topic {
         this.send("4. I can tell you about the algorithm's predictions for any given case.");
         this.send("5. I can show you some resources for interventions.");
     }
-    
+
     async onDispatch() {
         this.help();
         this.end();

@@ -3,14 +3,14 @@ import  asfetch from "node-fetch";
 
 /* export class Insights extends Topic {
     async onStart(concernSet: any) {
-        const cs = [concernSet];
-        const baseURL = 'http://localhost:1337/insights';
+        let cs = [concernSet];
+        let baseURL = 'http://localhost:1337/insights';
         fetch (baseURL, {
             method: 'GET',
             body: JSON.stringify(body),
             headers: {'Content-Type' : 'application/JSON'},
         }).then( value : Response) => {
-            const resArr = [res];
+            let resArr = [res];
             // for (concern of cs){
             //     for(re of resArr){
             //         if(re === concern){
@@ -41,12 +41,12 @@ import  asfetch from "node-fetch";
         }else{
             this.send(`I don't know what that means. Please answer yes or no`);
         }
-        
+
                 //FOR LOOP (probably?) - if the user answers yes, POST the behavior to the student concerns list
                 //if user answers no, return
             //if all data is no, send original set,
 
-            //if data has been added, send 
+            //if data has been added, send
     }
 
     async onChildEnd(finalConcernSet) {
@@ -64,7 +64,7 @@ import  asfetch from "node-fetch";
         console.log(finalConcernSet);
     }
 
-} 
+}
 
 Insights.register();
 **/

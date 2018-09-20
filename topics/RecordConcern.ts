@@ -1,5 +1,10 @@
-import { Topic, ListStyle } from "botbuilder-topical";
-import {PostConcern} from ".";
+// import { Topic, ListStyle } from "botbuilder-topical";
+// import {PostConcern} from ".";
+
+let Topic = require('botbuilder-topical').Topic;
+let ListStyle = require('botbuilder-topical').ListStyle;
+let PostConcern = require('.').PostConcern;
+
 
 
 class Child extends Topic<any, ConcernSet> {
@@ -57,7 +62,7 @@ export class RecordConcern extends Topic<any, ConcernState> {
     async onDispatch() {
         if (this.text && this.text !== "Yes" && this.text !== "No"){
             let concerns = this.text.split(',');
-            concerns.forEach( concern => {
+            concerns.forEach( (concern: any) => {
                 this.state.concerns.push(concern as string);
             })
             console.log(this.state);

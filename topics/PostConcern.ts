@@ -1,13 +1,15 @@
-import { Topic } from "botbuilder-topical";
-import fetch from "node-fetch";
+// import { Topic } from "botbuilder-topical";
+// import fetch from "node-fetch";
+
+let Topic = require('botbuilder-topical').Topic;
 
 export class PostConcern extends Topic {
     async onStart(result:string[]){
-        const results = result.join(' ');
+        let results = result.join(' ');
         let dataString = '';
 
-        // const spawn = require('child_process').spawn;
-        // const py = spawn('python', ['model_utils.py']);
+        // let spawn = require('child_process').spawn;
+        // let py = spawn('python', ['model_utils.py']);
 
         // py.stdout.on('data', (data: any) => {
         //     dataString += data.toString();

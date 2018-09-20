@@ -1,6 +1,8 @@
-import { Topic } from "botbuilder-topical";
-import { RecordConcern } from ".";
+// import { Topic } from "botbuilder-topical";
+// import { RecordConcern } from ".";
 
+let Topic = require('botbuilder-topical').Topic;
+let RecordConcern = require('.').RecordConcern;
 
 export class Root extends Topic {
 
