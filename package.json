@@ -18,6 +18,7 @@
     "node-fetch": "^2.1.2",
     "restify": "^7.2.1",
     "topical": "^1.1.1",
-    "typescript": "^2.8.3"
+    "typescript": "^2.8.3",
+    "typings": "^2.1.1"
   }
 }
