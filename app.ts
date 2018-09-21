@@ -13,6 +13,7 @@ Topic.init(new MemoryStorage());
 
 // import * as restify from 'restify';
 var restify = require('restify');
+var builder = require('botbuilder');
 
 var server = restify.createServer();
 
@@ -34,4 +35,16 @@ server.post('/api/messages', async (req: any, res: any) => {
     });
 });
 
-//This is a comment
+// Create chat connector for communicating with the Bot Framework Service
+// var connector = new builder.ChatConnector({
+//     appId: process.env.MicrosoftAppId,
+//     appPassword: process.env.MicrosoftAppPassword
+// });
+
+// Listen for messages from users
+// server.post('/api/messages', connector.listen());
+
+// Receive messages from the user and respond by echoing each message back (prefixed with 'You said:')
+// var bot = new builder.UniversalBot(connector, function (session: any) {
+//     session.send("You said: %s", session.message.text);
+// });
